@@ -1,0 +1,3 @@
+{
+  "robot.run.arguments": ["-L", "TRACE"]
+}

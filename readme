@@ -1,0 +1,80 @@
+# RobotAPIProject
+
+## 📖 Overview
+
+RobotAPIProject is an automated API testing suite built using Robot Framework. This project is designed for flexible, readable, and comprehensive testing of API endpoints. Example APIs under test include JSONPlaceholder and Simple Books API. The suite delivers fast feedback and easy maintenance for RESTful APIs.
+
+## 🚀 Key Features & Technologies
+
+- **Robot Framework**: Keyword-driven test automation for acceptance testing and ATDD.
+- **RequestsLibrary**: Simplifies HTTP API testing.
+- **JSONLibrary**: Advanced JSON handling for API responses.
+- **Collections, String Libraries**: For variable handling and string parsing.
+- **Python** (for dependencies, venv).
+
+## 🏗️ Project Structure
+
+```
+results/         # Output files (logs, reports)
+tests/           # Test suites for various public APIs
+venv/            # Isolated Python environment
+log.html         # Execution log
+output.xml       # xUnit-style output
+report.html      # Custom test report
+readme           # Project documentation
+```
+
+## 🧪 Example Test Suites
+
+- **JSONPlaceholder API**: CRUD operations for posts, comment filtering, user ID filtering.
+- **Simple Books API**: Book querying, client registration, authentication, order creation and management, error handling.
+
+## 🔧 Installation & Setup
+
+1. **Clone the repository**
+   ```bash
+   git clone  https://github.com/dolafx0019/Robot-frame-work-API-Project.git
+   cd RobotAPIProject
+   ```
+
+2. **(Recommended) Activate a Python virtual environment**
+   ```bash
+   python -m venv venv
+   # On Windows:
+   venv\Scripts\activate
+   # On macOS/Linux:
+   source venv/bin/activate
+   ```
+
+3. **Install dependencies**
+   ```bash
+   pip install robotframework
+   pip install robotframework-requests
+   pip install robotframework-jsonlibrary
+   ```
+
+## ▶️ Running Tests
+
+```bash
+robot tests/
+```
+
+- View the results in `log.html` and `report.html` after test execution.
+
+## 📌 Example Usage
+
+- To run only a specific test suite:
+  ```bash
+  robot tests/simple-books-api-click/simple-books-api.robot
+  ```
+- To see detailed logs:
+  Open `log.html` in your browser.
+
+## 🤝 Contributions
+
+Contributions are welcome! Please fork the repository and submit a pull request.
+
+## 📄 License
+
+Specify your open-source license here, for example:
+MIT License. See `LICENSE` file for details.
